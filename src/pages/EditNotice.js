@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, useParams } from "react-router-dom";
 import "../style/editNotice.css";
@@ -14,7 +14,7 @@ const EditNotice = () => {
   const notice = useSelector((state) => state.selectedNote);
 
   const onSubmitCallback = (notice) => {
-    console.log('onSubmitCallback',notice);
+    console.log("onSubmitCallback", notice);
     dispatch(actionEditNotice(id, notice));
     history.push("/");
   };
@@ -27,7 +27,11 @@ const EditNotice = () => {
     return null;
   }
   return (
-    <NoticeForm inputValues={notice.data} onSubmitCallback={onSubmitCallback} titlePage ={'Edit Notice'} />
+    <NoticeForm
+      inputValues={notice.data}
+      onSubmitCallback={onSubmitCallback}
+      titlePage={"Edit Notice"}
+    />
   );
 };
 

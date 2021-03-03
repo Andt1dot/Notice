@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../style/Notice.css";
 import { fetchNotices } from "../actions/actionGetAllNotice";
-import { DeleteModal } from "../components/DeleteModal";
 
 const initialState = {
   id: 0,

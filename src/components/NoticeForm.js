@@ -57,14 +57,14 @@ function NoticeForm({
             value={value.content}
           ></textarea>
           <label>Notice</label>
-        </div>
-        <a href="#" onClick={onSubmit}>
+        </div> 
+        <button onClick={onSubmit}>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           Save Change
-        </a>
+        </button>
       </form>
     </div>
   );

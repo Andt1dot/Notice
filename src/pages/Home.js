@@ -4,7 +4,6 @@ import { DeleteModal } from "../components/DeleteModal";
 import NoticeCard from "../components/NoticeCard";
 import "../style/HomePage.css";
 import "../style/index.css";
-import View from "./View";
 
 const Home = () => {
   return (
